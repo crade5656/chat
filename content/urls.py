@@ -7,7 +7,7 @@ urlpatterns = [
     path('<int:chat_id>/messages/', MessageListView.as_view(), name='message_list'),
     path('<int:chat_id>/messages/send/', MessageCreateView.as_view(), name='message_create'),
     path("chats/<int:chat_id>/stories/", StoryListView.as_view(), name="story-list"),
-    path("chats/<int:chat_id>/stories/create/", StoryCreateView.as_view(), name="story-create"),
+    path("<int:chat_id>/stories/create/",StoryCreateView.as_view(), name="story-create"),
     path("api/token/", TokenObtainPairView.as_view(), name="token_obtain_pair"),
     path("api/token/refresh/", TokenRefreshView.as_view(), name="token_refresh"),
 ]
