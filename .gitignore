@@ -1,0 +1,16 @@
+
+
+# Виртуальное окружение
+venv/
+.env/
+
+# База (если SQLite)
+db.sqlite3
+
+# PyCharm (IDE)
+.idea/
+
+
+.env
+config.json
+
